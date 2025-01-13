@@ -1,0 +1,83 @@
+@import url("./var.css");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+  color: var(--color-font);
+}
+
+body {
+  width: 100vw; /* Garante 100% da largura da janela */
+  height: 100vh; /* Garante 100% da altura da janela */
+  background-color: var(--color-background);
+  color: var(--color-font);
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  flex-direction: column;
+  align-items: center;    /* Centraliza verticalmente */
+  font-family: 'Overpass', sans-serif;
+}
+
+.star{
+  background-color: var(--color-font);
+  width: 6%;
+  padding: 4%;
+  border-radius: 50%;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--color-title);
+  line-height: 2.5;
+}
+
+button {
+  background-color: var(--color-orange);
+}
+
+section{
+  width: 18%;
+  align-items: center;
+}
+
+.content{
+  display: grid;
+  justify-content: center;
+  background-color: var(--color-box);
+  font-weight: 400;
+  padding: 16px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+p{
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.option{
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+  margin: 24px 0px 24px 0px;
+}
+
+.option_number{
+  width: 20%;
+  padding: 4%;
+  border-radius: 50%;
+  background-color: var(--color-font);
+  color: var(--color-title);
+  text-align: center;
+}
+
+.submit{
+  width: 100%;
+  border-style: none;
+  border-radius: 20px;
+  padding: 2%;
+}
