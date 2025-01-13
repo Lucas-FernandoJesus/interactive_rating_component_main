@@ -9,6 +9,9 @@ a{
   text-decoration: none;
   color: var(--color-font);
 }
+.attribution{
+  text-align: center;
+}
 
 body {
   width: 100vw; /* Garante 100% da largura da janela */
@@ -49,7 +52,7 @@ section{
   justify-content: center;
   background-color: var(--color-box);
   font-weight: 400;
-  padding: 16px;
+  padding: 24px;
   border-radius: 10px;
   align-items: center;
 }
@@ -103,4 +106,53 @@ p{
 .submit.active {
   background-color: var(--color-title);
   color: var(--color-box);
+}
+
+
+.content_congratulations{
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.alert{
+  background-color: var(--color-font);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 6px;
+  color: var(--color-orange);
+  margin: 12px 0px 24px 0px;
+}
+
+.img_thanks{
+  padding: 20px;
+}
+
+
+@media (min-width: 0px) and (max-width: 375px) {
+  .content{
+    width: 80vw;
+  }
+}
+@media (min-width: 376px) and (max-width: 530px){
+  .content{
+    width: 80vw;
+  }
+}
+@media (min-width: 531px) and (max-width: 900px){
+  .content{
+    width: 46%;
+  }
+}
+@media (min-width: 901px) and (max-width: 1300px){
+  .content{
+    width: 30vw;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1440px){
+  .content{
+    width: 25vw;
+  }
 }
