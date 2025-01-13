@@ -69,15 +69,38 @@ p{
 .option_number{
   width: 20%;
   padding: 4%;
+  border-style: none;
   border-radius: 50%;
   background-color: var(--color-font);
   color: var(--color-title);
   text-align: center;
+  transition: background-color 0.5s linear; /* Suaviza a transição */
+}
+
+.option_number:hover{
+  background-color: var(--color-orange);
+  cursor: pointer;
+}
+
+.option_number.active {
+  background-color: var(--color-title);
+  color: var(--color-box);
 }
 
 .submit{
   width: 100%;
   border-style: none;
   border-radius: 20px;
-  padding: 2%;
+  padding: 4%;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background-color: var(--color-orange);
+  cursor: pointer;
+}
+
+.submit.active {
+  background-color: var(--color-title);
+  color: var(--color-box);
 }
